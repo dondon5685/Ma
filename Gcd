@@ -1,0 +1,11 @@
+<?php
+
+function gcd($a, $b) {
+
+return ($b == 0) ? $a : gcd($b, $a % $b);
+
+}
+
+echo "GCD of 48 and 18: " . gcd(48, 18);
+
+?>
