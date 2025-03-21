@@ -1,0 +1,24 @@
+
+<?php
+
+ $cookie_name="last_visit";
+
+ $current_time=date("Y_m_d H:i:s");
+? >
+ if(isset($_COOKIE[$cookie_name]))
+
+{
+
+ $last_visit=$_COOKIE[$cookie_name];
+ echo "<p>last visited on:$last_visit</p>";
+
+}
+
+else{
+
+echo"<p> this is your first visit!</p>";
+
+}
+
+ setcookie($cookie_name, $current_time,time()+(38 *24 *60*66));
+? >
